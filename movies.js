@@ -1,4 +1,5 @@
 "use strict";
+console.log("hi")
 
 $(".submit-btn").on("click", function(event) {
   event.preventDefault()
@@ -17,7 +18,7 @@ $(".submit-btn").on("click", function(event) {
     throw new Error('Title must have at least 2 characters.');s
   }
 
-  
+
   $(".display-area").append($("<p>").text(title))
   $(".display-area").append($("<p>").text(rating))
   $(".display-area").append(removeBtn)
