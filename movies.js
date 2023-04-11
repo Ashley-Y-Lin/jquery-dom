@@ -8,6 +8,7 @@ $(".submit-btn").on("click", function(event) {
   const rating = $(".form-control").eq(1).val();
   const removeBtn = $("<button>Remove</button>").addClass("remove-btn");
 
+  //TODO: replace throw new Error with return
   if (rating < 0 || rating > 10) {
     alert('Rating must be between 0 and 10.');
     throw new Error('Rating must be between 0 and 10.');
@@ -30,6 +31,7 @@ $(".submit-btn").on("click", function(event) {
   $(".display-area").append(newRow)
 });
 
+//TODO: can replace .prev() with .closest()
 $(".display-area").on("click", ".remove-btn", function(evt){
   $(evt.target).prev().remove()
   $(evt.target).prev().remove()
