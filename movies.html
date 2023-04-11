@@ -9,6 +9,7 @@
         href="https://unpkg.com/bootstrap@5/dist/css/bootstrap.css">
 </head>
 <body>
+  <h2>Submit a movie!</h2>
   <form class="form-group">
     <div>
       Title
@@ -20,8 +21,25 @@
     </div>
     <button class="submit-btn">Submit</button>
   </form>
-  
-  <div class="display-area">
+
+  <!--<div class="display-area">-->
+
+  <br>
+
+  <h2>Movies submitted</h2>
+  <table class="table display-area">
+    <thead></thead>
+      <tr>
+        <th>Title</th>
+        <th>Rating</th>
+        <th></th>
+      </tr>
+    <tbody>
+      <!-- jquery will add rows here -->
+    </tbody>
+    <tfoot></tfoot>
+  </table>
+
   </div>
   <script src="https://unpkg.com/jquery"></script>
   <script src="movies.js"></script>

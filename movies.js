@@ -18,12 +18,16 @@ $(".submit-btn").on("click", function(event) {
     throw new Error('Title must have at least 2 characters.');s
   }
 
-
+  /*
   $(".display-area").append($("<p>").text(title))
   $(".display-area").append($("<p>").text(rating))
-  $(".display-area").append(removeBtn)
+  $(".display-area").append(removeBtn)*/
 
-
+  const newRow = $("<tr>")
+  newRow.append($("<td>").text(title))
+  newRow.append($("<td>").text(rating))
+  newRow.append($("<td>").text(removeBtn))
+  $(".display-area").append(newRow)
 });
 
 $(".display-area").on("click", ".remove-btn", function(evt){
